@@ -2,13 +2,6 @@
   @include container;
 }
 
-.wrap {
-  @include container;
-  height: 100vh;
-}
-
-.col1 {
-  @include span(1 no-gutters);
-  height: 100vh;
-  background: red;
+.row {
+  @include clearfix;
 }
