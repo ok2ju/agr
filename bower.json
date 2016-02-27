@@ -1,0 +1,11 @@
+{
+  "name": "agr",
+  "version": "0.0.1",
+  "authors": [
+    "ok2ju <soulSpringg@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "susy": "~2.2.12"
+  }
+}

@@ -1,0 +1,57 @@
+$susy: (
+  columns: 12,
+  container: 1200px,
+  gutters: 1/4,
+  math: fluid,
+  gutter-position: inside,
+  global-box-sizing: border-box,
+  debug: (image: show)
+);
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  @include font-smoothing;
+  background-color: $body-color;
+  color: $primary-font-color;
+  font-family: $primary-font;
+  font-size: $font-size-base;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
