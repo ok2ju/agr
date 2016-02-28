@@ -25,10 +25,6 @@
   padding: 0;
 }
 
-.Modern-Slider .item .img-fill{
-  background:#000;
-}
-
 .Modern-Slider .item .img-fill .info{
   position:absolute;
   width:100%;
@@ -36,7 +32,6 @@
   top:0px;
   left:0px;
   background:rgba(0,0,0,.50);
-  line-height:100vh;
   text-align:center;
 }
 
@@ -44,12 +39,25 @@
   filter:blur(5px);
 }
 
-.Modern-Slider .item .info > div{
-  display:inline-block!important;
-  vertical-align:middle;
+.Modern-Slider .item .info > div {
+  @include center(y);
+  position: absolute;
+  text-align: left;
+  right: 20%;
+
+  span {
+    background: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 5px 10px;
+
+    &:last-child {
+      margin-top: -5px;
+    }
+  }
 }
 
-.Modern-Slider .NextArrow{
+.Modern-Slider .NextArrow {
   position:absolute;
   top:50%;
   right:0px;
@@ -59,14 +67,15 @@
   border:0 none;
   margin-top:-22.5px;
   text-align:center;
-  font:20px/45px FontAwesome;
   color:#FFF;
   z-index:5;
 }
 
-.Modern-Slider .NextArrow:before{content:'\f105';}
+.Modern-Slider .NextArrow:before {
+  content:'\f105';
+}
 
-.Modern-Slider .PrevArrow{
+.Modern-Slider .PrevArrow {
   position:absolute;
   top:50%;
   left:0px;
@@ -76,31 +85,14 @@
   border:0 none;
   margin-top:-22.5px;
   text-align:center;
-  font:20px/45px FontAwesome;
   color:#FFF;
   z-index:5;
 }
 
-.Modern-Slider .PrevArrow:before{content:'\f104';}
-
-.Modern-Slider .item h3{
-  font:30px/50px RalewayB;
-  text-transform:uppercase;
-  color:#FFF;
-  animation:fadeOutRight 1s both;
-  margin:0;
-  padding:0;
+.Modern-Slider .PrevArrow:before {
+  content:'\f104';
 }
 
-.Modern-Slider .item h5{
-  margin:0;
-  padding:0;
-  font:15px/30px RalewayR;
-  color:#FFF;
-  max-width:600px;
-  overflow:hidden;
-  height:60px;
-  animation:fadeOutLeft 1s both;
+.Modern-Slider {
+  background:#000;
 }
-
-.Modern-Slider {background:#000;}
