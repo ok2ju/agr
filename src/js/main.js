@@ -11,7 +11,6 @@ $(document).ready(function() {
     cssEase:'linear',
    // fade:true,
     draggable:false,
-    prevArrow:'<button class="PrevArrow"></button>',
-    nextArrow:'<button class="NextArrow"></button>', 
+    arrows: false
   });
 });

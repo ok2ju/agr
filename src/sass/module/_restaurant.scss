@@ -1,32 +1,61 @@
+.restaurants__header {
+  @include container;
+  padding: 90px 0;
+}
+
+.restaurants__header-inner {
+  @include span(4);
+  float: none;
+  margin: 0 auto;
+}
+
+.restaurants__title {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.restaurants__text {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 27px;
+  text-align: center;
+}
+
+.restaurants__body {
+  @include container(1590px);
+}
+
 .restaurants {
   .column {
-    width: percentage(4 / 12);
+    width: percentage(480 / 1590);
     float: left;
     position: relative;
     min-height: 1px;
+    margin-right: percentage(75 / 1590);
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .restaurant {
   figure {
     img {
-      transform: scale(1);
-      transition: transform .2s linear;
       position: relative;
     }
   }
 
   &:hover {
     img {
-      transform :scale(1.1);
       z-index: 100;
     }
   }
-}
-
-.restaurants__body {
-  @include clearfix;
-  overflow: hidden;
 }
 
 .restaurant-hover {

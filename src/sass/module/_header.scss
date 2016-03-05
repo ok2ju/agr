@@ -1,3 +1,59 @@
 .header {
+  @include container;
+  padding-top: 38px;
   text-align: center;
+}
+
+.header__inner {
+  @include clearfix;
+  @include span(10);
+  @include push(1);
+  float: none;
+}
+
+.header__social,
+.header__search {
+  @include span(2 of 10);
+}
+
+.header__logo {
+  @include span(6 of 10);
+}
+
+.header__search {
+  padding-top: 25px;
+  text-align: right;
+
+  input {
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    width: 90%;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #e1e1e1;
+    color: #7a7a7a;
+    padding-bottom: 5px;
+  }
+}
+
+.header__social {
+  padding-top: 25px;
+  text-align: left;
+
+  a {
+    display: inline-block;
+    padding: 0 15px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  img {
+    width: 24px;
+  }
 }
