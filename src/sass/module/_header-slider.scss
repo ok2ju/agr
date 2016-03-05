@@ -35,15 +35,17 @@
   text-align:center;
 }
 
-.Modern-Slider .item .img-fill img{
+.Modern-Slider .item .img-fill img {
   filter:blur(5px);
 }
 
 .Modern-Slider .item .info > div {
-  @include center(y);
+  /* @include center(y); */
   position: absolute;
+  top: percentage(421 / 770);
+  margin-top: -68px;
   text-align: left;
-  right: 20%;
+  right: percentage(400 / 1920);
 
   span {
     color: #000;
