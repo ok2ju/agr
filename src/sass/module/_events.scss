@@ -1,3 +1,31 @@
+.events__header {
+  @include container;
+  padding: 90px 0;
+}
+
+.events__header-inner {
+  @include span(4);
+  float: none;
+  margin: 0 auto;
+}
+
+.events__title {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.events__text {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 27px;
+  text-align: center;
+}
+
 .slider-nav__item {
   display: inline-block;
 }
