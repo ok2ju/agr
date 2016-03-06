@@ -32,4 +32,10 @@
 
 .events__body {
   background: url('../img/BG_for_Events.jpg');
+  background-size: cover;
+  padding-bottom: 130px;
+}
+
+.events__body-inner {
+  @include container;
 }
