@@ -43,3 +43,20 @@
     }
   }
 }
+
+.project-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.project-hover__body {
+  @include center(y);
+  position: relative;
+  text-align: center;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
