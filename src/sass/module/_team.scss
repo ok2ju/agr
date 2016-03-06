@@ -1,0 +1,63 @@
+.team__header {
+  @include container;
+  padding: 90px 0;
+}
+
+.team__header-inner {
+  @include span(4);
+  float: none;
+  margin: 0 auto;
+}
+
+.team__title {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team__text {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 27px;
+  text-align: center;
+}
+
+.team__body {
+  @include container;
+  @include clearfix;
+}
+
+.team {
+  .column {
+    @include span(3);
+  }
+}
+
+.team-member {
+  figure {
+    box-shadow: -10px -10px 0 0;
+  }
+}
+
+.team-member__info {
+  background: #f44336;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.team-member__info-name {
+  font-family: $primary-font;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team-member__info-desc {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  font-style: italic;
+}
