@@ -1,0 +1,99 @@
+.wu-form__header {
+  @include container;
+  padding: 90px 0;
+}
+
+.wu-form__header-inner {
+  @include span(4);
+  float: none;
+  margin: 0 auto;
+}
+
+.wu-form__title {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wu-form__text {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 27px;
+  text-align: center;
+}
+
+.wu-form__body {
+  @include container;
+
+  .row {
+    @include clearfix;
+  }
+
+  .textarea-row {
+    margin-top: 30px;
+  }
+}
+
+.input-col {
+  @include span(4);
+}
+
+.full-input-col {
+  @include span(12);
+}
+
+.wu-input {
+  font-family: $primary-font;
+  font-size: 2.4rem;
+  width: 100%;
+  outline: none;
+  border: 2px solid #202020;
+  min-height: 70px;
+  padding: 0 20px;
+  background: transparent;
+
+  &::-webkit-input-placeholder {
+    color: #000;
+  }
+
+  &:-moz-placeholder {
+    color: #000;  
+  }
+
+  &::-moz-placeholder {
+    color: #000;  
+  }
+
+  &:-ms-input-placeholder {  
+    color: #000;  
+  }
+}
+
+.textarea-wrapper {
+  position: relative;
+
+  .wu-submit-btn {
+    content: '';
+    background: #ffd200;
+    display: block;
+    width: 140px;
+    height: 136px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border: 0;
+    border-left: 2px solid #202020;
+    cursor: pointer;
+  }
+}
+
+.wu-textarea {
+  padding-top: 27px;
+  padding-right: 160px;
+  resize: none;
+  height: 140px;
+}

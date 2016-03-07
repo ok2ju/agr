@@ -1,0 +1,51 @@
+.footer {
+  padding: 110px 0;
+}
+
+.footer-inner {
+  @include container;
+}
+
+.footer-brand {
+  @include clearfix;
+}
+
+.footer-brand-col {
+  @include span(4 of 12);
+  @include clearfix;
+  float: none;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  @include span(2 of 4);
+}
+
+.footer-social {
+  @include span(2 of 4 last);
+}
+
+.footer-links {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.footer-list__item {
+  display: inline-block;
+  padding: 0 22px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.footer-list-link {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  display: block;
+  color: #000;
+}

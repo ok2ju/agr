@@ -1,0 +1,75 @@
+.vacancy__header {
+  @include container;
+  padding: 90px 0;
+}
+
+.vacancy__header-inner {
+  @include span(4);
+  float: none;
+  margin: 0 auto;
+}
+
+.vacancy__title {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.vacancy__text {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 27px;
+  text-align: center;
+}
+
+.vacancy__body {
+  @include container;
+
+  .row {
+    @include clearfix;
+  }
+}
+
+.vacancy-col {
+  @include span(12);
+  margin-bottom: 65px;
+}
+
+.vacancy-name {
+  font-family: $primary-font;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.vacancy-head {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.vacancy-list {
+  padding-left: 35px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.vacancy-list__item {
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 27px;
+}
+
+.more-wrapper {
+  @include span(12);
+  text-align: center;
+}
