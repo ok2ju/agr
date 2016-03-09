@@ -35,7 +35,9 @@ $(document).ready(function() {
     cssEase:'linear',
     fade:true,
     draggable: false,
-    arrows: false
+    arrows: true,
+    prevArrow:'<button class="PrevArrow"></button>',
+    nextArrow:'<button class="NextArrow"></button>', 
   });
 
   $('.advices-slider').slick({

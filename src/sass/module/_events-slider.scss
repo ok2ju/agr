@@ -77,3 +77,23 @@
 .puzzle-col-6 {
   @include span(6 of 9 last);
 }
+
+.events-slider {
+  .PrevArrow {
+    
+  }
+
+  .NextArrow {
+    background: url('../img/icons/arrow-right.png');
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    border: 0 none;
+    margin-top: -50px;
+    text-align: center;
+    color: #FFF;
+    z-index: 5;
+  }
+}
