@@ -34,6 +34,7 @@
 .e-slider-slogan {
   @include span(3);
   margin-top: 16.855345911949685534591194968553%;
+  text-align: left;
 
   span {
     color: #000;
@@ -42,10 +43,12 @@
     background: #f44336;
     display: inline-block;
     font-weight: 600;
-    padding: 25px 45px 25px 20px;
+    padding: 0.8em 1.5em 0.8em 0.6666666666666666em;
+    /* padding: 25px 45px 25px 20px; */
 
     &:last-child {
-      margin-top: -25px;
+      padding-top: 0.3333333333333333em;
+      margin-top: -1.1666666666666667em;
     }
   }
 }

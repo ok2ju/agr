@@ -9,7 +9,11 @@ $susy: (
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 50%;
+
+  @include susy-media($medium) {
+    font-size: 62.5%;
+  }
 }
 
 html,
@@ -35,6 +39,7 @@ body {
   font-family: $primary-font;
   font-size: $font-size-base;
   text-rendering: optimizeLegibility;
+  letter-spacing: .075em;
 }
 
 a {

@@ -23,6 +23,17 @@
 
 .footer-social {
   @include span(2 of 4 last);
+  padding-top: 20px;
+
+  a {
+    display: inline-block;
+    padding: 0 15px;
+    opacity: .3;
+  }
+
+  img {
+    width: 24px;
+  }
 }
 
 .footer-links {
@@ -46,6 +57,7 @@
 .footer-list-link {
   font-family: $primary-font;
   font-size: 1.8rem;
+  font-variant: small-caps;
   display: block;
   color: #000;
 }
