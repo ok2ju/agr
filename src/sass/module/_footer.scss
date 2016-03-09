@@ -11,19 +11,29 @@
 }
 
 .footer-brand-col {
-  @include span(4 of 12);
   @include clearfix;
-  float: none;
   margin: 0 auto;
+  max-width: 400px;
+  padding: 0 15px;
 }
 
 .footer-logo {
-  @include span(2 of 4);
+  width: 100%;
+  text-align: center;
+
+  @include susy-media($xs) {
+    @include span(2 of 4);
+  }
 }
 
 .footer-social {
-  @include span(2 of 4 last);
+  width: 100%;
   padding-top: 20px;
+  text-align: center;
+
+  @include susy-media($xs) {
+    @include span(2 of 4);
+  }
 
   a {
     display: inline-block;
